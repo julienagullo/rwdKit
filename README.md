@@ -2,9 +2,9 @@
 
 # jQuery rwdUtility
 
-A jQuery plugin which helps developers to view the current breakpoint in web page: [plugin demo](https://www.numebrique.fr/plugin/rdwutility)
+A jQuery plugin which helps developers to view the current breakpoint in web page: [plugin demo](https://www.numebrique.fr/plugin/rwdutility)
 
-[![release](https://img.shields.io/github/release/numebrique/rwdUtility.svg)](https://github.com/numebrique/rwdUtility/releases/latest)
+[![release](https://img.shields.io/github/release/numebrique/rwdUtility.svg)](https://github.com/numebrique/rwdUtility/releases/tag/1.0.0)
 [![license](https://img.shields.io/github/license/numebrique/rwdUtility.svg)](https://github.com/numebrique/rwdUtility/LICENSE.md)
 
 ## Table of contents
