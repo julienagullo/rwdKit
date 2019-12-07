@@ -1,5 +1,5 @@
 /**
- * jQuery rwdUtility plug-in 1.0.0
+ * jQuery rwdUtility plug-in 1.1.0
  * Copyright 2019, Numébrique
  * Licensed under the MIT license
  *
@@ -12,7 +12,7 @@
 
 	"use strict";
 
-	$.fn.rwdUtility = function(options, bootstrap4 = false) {
+	$.fn.rwdUtility = function(options) {
 
 		var m = '';
 
@@ -25,13 +25,14 @@
 				xl: 1599,
 			},
 			console: false,
+			bootstrap4: false,
 			position: 'bottom',
 			fontSize: '12px',
 			color: 'white',
 			backgroundColor: 'rgba(0,0,0,.65)',
 		}, options);
 
-		if (bootstrap4) {
+		if (params.bootstrap4) {
 			params.media = {
 				xs: 0,
 				sm: 576,
@@ -42,7 +43,12 @@
 		}
 
 		if (!params.console) {
-			$('body').append('<div id="rwdUtility" style="position:fixed;'+params.position+':0;width:100%;font-size:'+params.fontSize+';background-color:'+params.backgroundColor+';padding:5px;z-index:1100;"><span style="color:'+params.color+';float:left;"></span><a href="https://github.com/numebrique/rwdUtility" target="_blank" style="color:'+params.color+';float:right;">rwdUtility</a></div>');
+			$('body').append('' +
+				'<div id="rwdUtility" style="position:fixed;'+params.position+':0;width:100%;font-size:'+params.fontSize+';background-color:'+params.backgroundColor+';padding:5px;z-index:1100;">' +
+				'<span style="color:'+params.color+';float:left;"></span>' +
+				'<a href="https://github.com/numebrique/rwdUtility" target="_blank" style="color:'+params.color+';float:right;">rwdUtility</a>' +
+				'</div>'
+			);
 		}
 
 		function detectMedia(w) {
@@ -61,10 +67,12 @@
 			}
 		}
 
-		window.onresize = function() {
+		function eventHandler(e) {
 			detectMedia(window.innerWidth);
-		};
+		}
 
+		window.onresize = eventHandler;
+		window.addEventListener('deviceorientation', eventHandler);
 		detectMedia(window.innerWidth);
 
 		return this;

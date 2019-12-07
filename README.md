@@ -54,6 +54,7 @@ $(document).rwdUtility({
         xl: 1599,
     },
     console: false,
+    bootstrap4: false,
     position: 'bottom',
     fontSize: '12px',
     color: 'white',
@@ -61,25 +62,19 @@ $(document).rwdUtility({
 });
 ```
 
-`media:` breakpoints screen object
+`media:` (object) breakpoints screen object
 
-`console:` active plugin in browser console
+`console:` (bool) active plugin in browser console
 
-`position:` bottom or top position
+`bootstrap4:` (bool) forced to use Bootstrap 4 breakpoints
 
-`fontSize:` font size plugin
+`position:` (string) bottom or top position
 
-`color:` font color plugin
+`fontSize:` (string) current font size
 
-`backgroundColor:` background color plugin
+`color:` (string) current font color
 
-The second boolean parameter is to use Bootstrap 4 breakpoints:
-
-```javascript
-$(document).rwdUtility({}, true);
-or
-$(document).rwdUtility(null, true);
-```
+`backgroundColor:` (string) current background-color
 
 
 ## Contact
