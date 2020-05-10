@@ -1,16 +1,13 @@
-<img src="https://www.numebrique.fr/img/logo_rwdutility.svg" width="200" height="200">
+# jQuery rwdKit
 
-# jQuery rwdUtility
+jQuery plugin can help developers to view current breakpoint informations in responsive web page: [Demo page](https://avantage.digital/rwdkit/)
 
-A jQuery plugin which helps developers to view the current breakpoint in web page: [plugin demo](https://www.numebrique.fr/plugin/rwdutility)
-
-[![license](https://img.shields.io/github/license/numebrique/rwdUtility.svg)](https://github.com/numebrique/rwdUtility/LICENSE.md)
+[![license](https://img.shields.io/github/license/avantage-digital/rwdKit.svg)](https://github.com/avantage-digital/rwdKit/LICENSE.md)
 
 ## Table of contents
 
 - [Quick start](#quick-start)
 - [Contact](#contact)
-- [Creator](#creator)
 - [Responsibility](#responsibility)
 - [License](#license)
 
@@ -19,14 +16,14 @@ A jQuery plugin which helps developers to view the current breakpoint in web pag
 
 #### Download the release:
 
-- Download [last release](https://github.com/numebrique/rwdUtility/releases/)
-- Or clone the repo: `git clone https://github.com/numebrique/rwdUtility.git`
+- Download [last release](https://github.com/avantage-digital/rwdKit/releases/)
+- Or clone the repo: `git clone https://github.com/avantage-digital/rwdKit.git`
 
 #### Import library plugin:
 
 ```html
 <script src="jquery.js"></script>
-<script src="jquery.rwdUtility.js"></script>
+<script src="jquery.rwdKit.js"></script>
 ```
 
 #### Launch rwdUtility plugin:
@@ -34,10 +31,10 @@ A jQuery plugin which helps developers to view the current breakpoint in web pag
 It's not a difficult task:
 
 ```javascript
-$(document).rwdUtility();
+$(document).rwdKit();
 ```
 
-You can launch `rwdUtility` on `$(window)`, `$(document)` or `$('any')` element.
+You can launch `rwdKit` on `$(window)`, `$(document)` or `$('body')` element.
 
 
 #### Available options:
@@ -45,7 +42,7 @@ You can launch `rwdUtility` on `$(window)`, `$(document)` or `$('any')` element.
 Default options:
 
 ```javascript
-$(document).rwdUtility({
+$(document).rwdKit({
     media: {
         xs: 0,
         sm: 768,
@@ -79,21 +76,15 @@ $(document).rwdUtility({
 
 ## Contact
 
-Have a bug or feature request? Contact me: [contact@numebrique.fr](contact@numebrique.fr)
+**Avantage Digital**
 
-
-## Creator
-
-**Numébrique**
-
-- Website: <https://www.numebrique.fr>
-- Twitter: <https://twitter.com/numebrique>
-- Github: <https://github.com/numebrique>
-
+- Mail: [contact@avantage.digital](contact@avantage.digital)
+- Website: <https://avantage.digital>
+- Github: <https://github.com/avantage-digital>
 
 ## Responsibility
 
-Numébrique disclaims any responsibility for the use that is made with this tool.
+Avantage Digital disclaims any responsibility for the use that is made with this tool.
 
 ```text
 Al-Nu’man ibn Bashir reported,
@@ -110,6 +101,6 @@ Sahih al-Bukhārī 52, Sahih Muslim 1599
 
 ## License
 
-Copyright © Numébrique
+Copyright © Avantage Digital
 
 Licensed under the MIT license.

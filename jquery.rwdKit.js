@@ -1,18 +1,18 @@
 /**
- * jQuery rwdUtility plug-in 1.1.0
- * Copyright 2019, Numébrique
+ * jQuery rwdKit plug-in 1.2.0
+ * Copyright (c) Avantage Digital
  * Licensed under the MIT license
  *
- * A jQuery plugin which helps developers to view the current breakpoint in web page.
+ * jQuery plugin can help developers to view current breakpoint informations in responsive web page.
  *
- * @author	Numébrique
- * @docs	https://github.com/numebrique/rwdUtility
+ * @author	Avantage Digital
+ * @docs	https://github.com/avantage-digital/rwdKit
  */
 (function($){
 
 	"use strict";
 
-	$.fn.rwdUtility = function(options) {
+	$.fn.rwdKit = function(options) {
 
 		var m = '';
 
@@ -29,7 +29,7 @@
 			position: 'bottom',
 			fontSize: '12px',
 			color: 'white',
-			backgroundColor: 'rgba(0,0,0,.65)',
+			backgroundColor: 'rgba(14,120,200,.8)',
 		}, options);
 
 		if (params.bootstrap4) {
@@ -44,9 +44,9 @@
 
 		if (!params.console) {
 			$('body').append('' +
-				'<div id="rwdUtility" style="position:fixed;'+params.position+':0;width:100%;font-size:'+params.fontSize+';background-color:'+params.backgroundColor+';padding:5px;z-index:1100;">' +
-				'<span style="color:'+params.color+';float:left;"></span>' +
-				'<a href="https://github.com/numebrique/rwdUtility" target="_blank" style="color:'+params.color+';float:right;">rwdUtility</a>' +
+				'<div id="rwdKit" style="position:fixed;'+params.position+':0;width:100%;font-size:'+params.fontSize+';background-color:'+params.backgroundColor+';padding:5px;z-index:1100;text-align:center;">' +
+				'<span style="color:'+params.color+';"></span>' +
+				'<a href="https://github.com/avantage-digital/rwdKit" target="_blank" style="color:'+params.color+';float:left;">rwdKit</a>' +
 				'</div>'
 			);
 		}
@@ -63,7 +63,7 @@
 			if (params.console) {
 				console.log(o);
 			} else {
-				$('#rwdUtility').find('span').html(o);
+				$('#rwdKit').find('span').html(o);
 			}
 		}
 
