@@ -1,4 +1,4 @@
-# jQuery rwdKit
+# jQuery rwdKit 2
 
 jQuery plugin can help developers to view current breakpoint informations in responsive web page: [Demo page](https://avantage.digital/rwdkit/)
 
@@ -45,17 +45,16 @@ Default options:
 $(document).rwdKit({
     media: {
         xs: 0,
-        sm: 768,
-        md: 992,
-        lg: 1200,
-        xl: 1599,
+        sm: 576,
+        md: 768,
+        lg: 992,
+        xl: 1200,
     },
     console: false,
-    bootstrap4: false,
+    bootstrap3: false,
     position: 'bottom',
-    fontSize: '12px',
     color: 'white',
-    backgroundColor: 'rgba(0,0,0,.65)',
+    backgroundColor: 'rgba(14,120,200,.9)',
 });
 ```
 
@@ -63,15 +62,20 @@ $(document).rwdKit({
 
 `console:` (bool) active plugin in browser console
 
-`bootstrap4:` (bool) forced to use Bootstrap 4 breakpoints
+`bootstrap3:` (bool) forced to use Bootstrap 3 breakpoints (default version 4)
 
 `position:` (string) bottom or top position
-
-`fontSize:` (string) current font size
 
 `color:` (string) current font color
 
 `backgroundColor:` (string) current background-color
+
+
+#### Control options:
+
+- Press `F4` key or click `refresh button` to reload page without cache
+- Click `mobile button` to open responsive iframe which can be resized
+- Press `F4` key with iframe focus to reload only iframe without cache
 
 
 ## Contact
