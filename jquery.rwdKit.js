@@ -1,5 +1,5 @@
 /**
- * jQuery rwdKit plug-in 2.0.0
+ * jQuery rwdKit plug-in 2.1.0
  * Copyright (c) Avantage Digital
  * Licensed under the MIT license
  *
@@ -55,7 +55,9 @@
 				'#rwdFrame .bar{display:inline-block;width:15px;height:90%;margin:0;padding:0;border:0;color:#fff;font-size:1.4em;line-height:0;text-align:center;border-radius:0 5px 5px 0;writing-mode:vertical-rl;text-orientation:mixed;background:'+params.backgroundColor+';cursor:col-resize;}' +
 				'#rwdFrame .closed{display:inline-block;position:absolute;top:20px;right:20px;width:20px;height:20px;font-size:1.1em;text-align:center;border-radius:25px;color:white;line-height:1.1;font-weight:500;cursor:pointer;}' +
 				'#rwdFrame .closed:hover{color:#676767;}' +
-				'#rwdFrame .data{display:block;color:white;font-size:1em;margin-left:5px;}' +
+				'#rwdFrame .output{display:block;}' +
+				'#rwdFrame input.size{display:inline-block;color:white;background:transparent;width:35px;text-align:right;border:0;font-size:1em;}' +
+				'#rwdFrame .data{display:inline-block;color:white;font-size:1em;}' +
 				'</style>');
 			$('body').append('' +
 				'<div id="rwdKit">' +
@@ -117,14 +119,18 @@
 			'<iframe src="' + window.location + '" frameborder="0"></iframe>' +
 			'<div class="bar">...</div>' +
 			'<div class="closed">x</div>' +
-			'<span class="data"></span>' +
+			'<div class="output">' +
+				'<input type="text" class="size" maxlength="4">' +
+				'<span class="data"></span>' +
+			'</div>' +
 			'</td></tr></table>');
 
 		$('#rwdFrame iframe').on('load', function(e){
 			var frame = $(this).contents();
 			frame.find('#rwdKit').remove();
 			width = frame.width();
-			$('#rwdFrame .data').html(width + 'px | ' + detectMedia(width));
+			$('#rwdFrame .size').val(width);
+			$('#rwdFrame .data').html('px | ' + detectMedia(width));
 		});
 
 		$('#rwdFrame').on('mousedown', 'div.bar', function(e){
@@ -134,6 +140,15 @@
 			$('#rwdFrame iframe').css('pointer-events', 'none');
 			width = $('#rwdFrame iframe').width();
 			funct = setInterval(resize, 10);
+		});
+
+		$('#rwdFrame input.size').on('keyup', function(e){
+			if(e.keyCode == 13) {
+				width = parseInt($('#rwdFrame input.size').val(), 10);
+				$('#rwdFrame iframe').css('width', width + 'px');
+				$('#rwdFrame .size').val(width);
+				$('#rwdFrame .data').html('px | ' + detectMedia(width));
+			}
 		});
 
 		$('body').on('mousemove', recalc);
@@ -157,9 +172,10 @@
 
 		function resize() {
 			if (press) {
-				let w = width - (ini.x - pos.x) * 2;
+				let w = Math.ceil(width - (ini.x - pos.x) * 2);
 				$('#rwdFrame iframe').css('width', w + 'px');
-				$('#rwdFrame .data').html(w + 'px | ' + detectMedia(w));
+				$('#rwdFrame .size').val(w);
+				$('#rwdFrame .data').html('px | ' + detectMedia(w));
 			}
 		}
 

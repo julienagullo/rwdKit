@@ -28,8 +28,6 @@ jQuery plugin can help developers to view current breakpoint informations in res
 
 #### Launch rwdUtility plugin:
 
-It's not a difficult task:
-
 ```javascript
 $(document).rwdKit();
 ```
@@ -71,11 +69,15 @@ $(document).rwdKit({
 `backgroundColor:` (string) current background-color
 
 
-#### Control options:
+#### General options:
 
-- Press `F4` key or click `refresh button` to reload page without cache
+- Press `F4` key or click `refresh button` to reload page without cache (to avoid opening the development tool)
+
+#### Iframe options:
+
 - Click `mobile button` to open responsive iframe which can be resized
-- Press `F4` key with iframe focus to reload only iframe without cache
+- Press `F4` key with iframe focus to reload only iframe content without cache
+- Resize the iframe precisely by changing size below the iframe then press `ENTER`
 
 
 ## Contact
