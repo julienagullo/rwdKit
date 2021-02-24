@@ -1,5 +1,5 @@
 /**
- * jQuery rwdKit plug-in 2.1.1
+ * jQuery rwdKit plug-in 2.2
  * Copyright (c) Avantage Digital
  * Licensed under the MIT license
  *
