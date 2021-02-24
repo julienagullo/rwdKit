@@ -1,4 +1,4 @@
-# jQuery rwdKit 2
+# jQuery rwdKit
 
 jQuery plugin can help developers to view current breakpoint informations in responsive web page: [Demo page](https://avantage.digital/rwdkit/)
 
@@ -22,11 +22,12 @@ jQuery plugin can help developers to view current breakpoint informations in res
 #### Import library plugin:
 
 ```html
+
 <script src="jquery.js"></script>
-<script src="jquery.rwdKit.js"></script>
+<script src="jquery.rwdkit.js"></script>
 ```
 
-#### Launch rwdUtility plugin:
+#### Launch rwdKit plugin:
 
 ```javascript
 $(document).rwdKit();
