@@ -79,7 +79,7 @@ $(document).rwdKit({
 - Click `mobile button` to open responsive iframe which can be resized
 - Press `F4` key with iframe focus to reload only iframe content without cache
 - Resize the iframe precisely by changing size below the iframe then press `ENTER`
-
+- Switch from one breakpoint to another with the `left` and `right` arrows 
 
 ## Contact
 
