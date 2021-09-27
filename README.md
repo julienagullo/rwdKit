@@ -83,7 +83,7 @@ $(document).rwdKit({
 
 ## Contact
 
-- Mail: [contact@jagullo.fr](mailto:contact@jagullo.fr?subject=[GitHub]%20rwdKit))
+- Mail: [contact@jagullo.fr](mailto:contact@jagullo.fr?subject=[GitHub]%20rwdKit)
 - Website: <https://jagullo.fr>
 - Github: <https://github.com/julienagullo>
 
