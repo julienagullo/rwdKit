@@ -1,8 +1,8 @@
 # jQuery rwdKit
 
-jQuery plugin can help developers to view current breakpoint informations in responsive web page: [Demo page](https://avantage.digital/rwdkit/)
+jQuery plugin can help developers to view current breakpoint informations in responsive web page: [Demo page](https://jagullo.fr/rwdkit/)
 
-[![license](https://img.shields.io/github/license/avantage-digital/rwdKit.svg)](https://github.com/avantage-digital/rwdKit/LICENSE.md)
+[![license](https://img.shields.io/github/license/julienagullo/rwdKit.svg)](https://github.com/julienagullo/rwdKit/LICENSE.md)
 
 ## Table of contents
 
@@ -16,8 +16,8 @@ jQuery plugin can help developers to view current breakpoint informations in res
 
 #### Download the release:
 
-- Download [last release](https://github.com/avantage-digital/rwdKit/releases/)
-- Or clone the repo: `git clone https://github.com/avantage-digital/rwdKit.git`
+- Download [last release](https://github.com/julienagullo/rwdKit/releases/)
+- Or clone the repo: `git clone https://github.com/julienagullo/rwdKit.git`
 
 #### Import library plugin:
 
@@ -83,15 +83,13 @@ $(document).rwdKit({
 
 ## Contact
 
-**Avantage Digital**
-
-- Mail: [contact@avantage.digital](contact@avantage.digital)
-- Website: <https://avantage.digital>
-- Github: <https://github.com/avantage-digital>
+- Mail: [contact@jagullo.fr](mailto:contact@jagullo.fr?subject=[GitHub]%20rwdKit))
+- Website: <https://jagullo.fr>
+- Github: <https://github.com/julienagullo>
 
 ## Responsibility
 
-Avantage Digital disclaims any responsibility for the use that is made with this tool.
+Author disclaims any responsibility for the use that is made with this tool.
 
 ```text
 Al-Nu’man ibn Bashir reported,
@@ -108,6 +106,6 @@ Sahih al-Bukhārī 52, Sahih Muslim 1599
 
 ## License
 
-Copyright © Avantage Digital
+Copyright © jagullo.fr
 
 Licensed under the MIT license.
