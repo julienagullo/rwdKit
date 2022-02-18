@@ -4,6 +4,7 @@ jQuery plugin can help developers to view current breakpoint informations in res
 
 [![license](https://img.shields.io/github/license/julienagullo/rwdKit.svg)](https://github.com/julienagullo/rwdKit/LICENSE.md)
 
+
 ## Table of contents
 
 - [Quick start](#quick-start)
@@ -35,7 +36,6 @@ $(document).rwdKit();
 
 You can launch `rwdKit` on `$(window)`, `$(document)` or `$('body')` element.
 
-
 #### Available options:
 
 Default options:
@@ -48,9 +48,10 @@ $(document).rwdKit({
         md: 768,
         lg: 992,
         xl: 1200,
+        xxl: 1400
     },
+    bootstrap: 5,
     console: false,
-    bootstrap3: false,
     position: 'bottom',
     color: 'white',
     backgroundColor: 'rgba(14,120,200,.9)',
@@ -61,14 +62,13 @@ $(document).rwdKit({
 
 `console:` (bool) active plugin in browser console
 
-`bootstrap3:` (bool) forced to use Bootstrap 3 breakpoints (default version 4)
+`bootstrap:` (int) forced to use older Bootstrap version breakpoints (default version 5)
 
 `position:` (string) bottom or top position
 
 `color:` (string) current font color
 
 `backgroundColor:` (string) current background-color
-
 
 #### General options:
 
@@ -81,11 +81,13 @@ $(document).rwdKit({
 - Resize the iframe precisely by changing size below the iframe then press `ENTER`
 - Switch from one breakpoint to another with the `left` and `right` arrows 
 
+
 ## Contact
 
 - Mail: [contact@jagullo.fr](mailto:contact@jagullo.fr?subject=[GitHub]%20rwdKit)
 - Website: <https://jagullo.fr>
 - Github: <https://github.com/julienagullo>
+
 
 ## Responsibility
 
