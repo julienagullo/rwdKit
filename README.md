@@ -1,6 +1,6 @@
 # jQuery rwdKit
 
-jQuery plugin can help developers to view current breakpoint informations in responsive web page: [Demo page](https://jagullo.fr/rwdkit/)
+jQuery plugin can help developers to view the current breakpoint in a responsive web page: [Demo page](https://jagullo.fr/rwdkit/)
 
 [![license](https://img.shields.io/github/license/julienagullo/rwdKit.svg)](https://github.com/julienagullo/rwdKit/LICENSE.md)
 
@@ -60,25 +60,25 @@ $(document).rwdKit({
 
 `media:` (object) breakpoints screen object
 
-`console:` (bool) active plugin in browser console
+`console:` (bool) active the plugin in the browser console
 
-`bootstrap:` (int) forced to use older Bootstrap version breakpoints (default version 5)
+`bootstrap:` (int) forced to use an older Bootstrap version breakpoints (default version 5)
 
 `position:` (string) bottom or top position
 
 `color:` (string) current font color
 
-`backgroundColor:` (string) current background-color
+`backgroundColor:` (string) current background color
 
 #### General options:
 
-- Press `F4` key or click `refresh button` to reload page without cache (to avoid opening the development tool)
+- Press `F4` key or click `refresh button` to reload the page without cache (to avoid opening the development tool)
 
 #### Iframe options:
 
-- Click `mobile button` to open responsive iframe which can be resized
-- Press `F4` key with iframe focus to reload only iframe content without cache
-- Resize the iframe precisely by changing size below the iframe then press `ENTER`
+- Click `mobile button` to open a responsive iframe which can be resized
+- Press `F4` key with the iframe focus to reload only iframe content without cache
+- Resize the iframe precisely by setting a size below the iframe then press `ENTER`
 - Switch from one breakpoint to another with the `left` and `right` arrows 
 
 
