@@ -1,6 +1,6 @@
 # jQuery rwdKit
 
-jQuery plugin can help developers to view the current breakpoint in a responsive web page: [Demo page](https://jagullo.fr/rwdkit/)
+jQuery plugin to help developers to view the current breakpoint in a responsive web page: [Demo page](https://open-source.jagullo.fr/rwdkit/)
 
 [![license](https://img.shields.io/github/license/julienagullo/rwdKit.svg)](https://github.com/julienagullo/rwdKit/LICENSE.md)
 

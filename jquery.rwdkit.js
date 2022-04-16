@@ -1,11 +1,12 @@
 /**
- * jQuery rwdKit 2.4.0
+ * jQuery rwdKit 2.4.1
  * Copyright (c) jagullo.fr
  * Licensed under the MIT license
  *
  * jQuery plugin can help web developers to view the current breakpoint information in a responsive web page.
  *
  * @author	jagullo.fr
+ * @website https://open-source.jagullo.fr/rwdkit/
  * @docs	https://github.com/julienagullo/rwdKit
  */
 (function($){
