@@ -1,0 +1,26 @@
+{
+  "name": "rwdkit",
+  "version": "2.4.1",
+  "description": "jQuery plugin can help web developers to view the current breakpoint information in a responsive web page",
+  "main": "jquery.rwdkit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julienagullo/rwdKit.git"
+  },
+  "keywords": [
+    "jquery",
+    "bootstrap",
+    "responsive-design",
+    "javascript",
+    "css"
+  ],
+  "author": "jagullo.fr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julienagullo/rwdKit/issues"
+  },
+  "homepage": "https://github.com/julienagullo/rwdKit#readme"
+}

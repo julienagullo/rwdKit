@@ -17,13 +17,13 @@ jQuery plugin to help developers to view the current breakpoint in a responsive 
 
 #### Download the release:
 
+- Install via npm: `npm i rwdkit`
 - Download [last release](https://github.com/julienagullo/rwdKit/releases/)
 - Or clone the repo: `git clone https://github.com/julienagullo/rwdKit.git`
 
 #### Import library plugin:
 
 ```html
-
 <script src="jquery.js"></script>
 <script src="jquery.rwdkit.js"></script>
 ```
@@ -85,7 +85,7 @@ $(document).rwdKit({
 ## Contact
 
 - Mail: [contact@jagullo.fr](mailto:contact@jagullo.fr?subject=[GitHub]%20rwdKit)
-- Website: <https://jagullo.fr>
+- Website: <https://jagullo.fr/>
 - Github: <https://github.com/julienagullo>
 
 
