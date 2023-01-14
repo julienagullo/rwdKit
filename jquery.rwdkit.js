@@ -1,5 +1,5 @@
 /**
- * jQuery rwdKit 2.4.1
+ * jQuery rwdKit 2.4.2
  * Copyright (c) jagullo.fr
  * Licensed under the MIT license
  *
@@ -154,10 +154,14 @@
 			'</td></tr></table>');
 
 		$('#rwdFrame iframe').on('load', function(e){
-			let frame = $(this).contents();
-			frame.find('#rwdKit').remove();
+			try {
+				let frame = $(this).contents();
+				frame.find('#rwdKit').remove();
+			} catch (error) {
+				//console.error(error);
+			}
 			width = $('#rwdFrame iframe').css('width');
-			width = width.substr(0, width.indexOf('px'));
+			width = width.slice(0, width.indexOf('px'));
 			$('#rwdFrame .size').val(width);
 			$('#rwdFrame .data').html('px | ' + detectMedia(width));
 		});
@@ -178,6 +182,27 @@
 				$('#rwdFrame .size').val(width);
 				$('#rwdFrame .data').html('px | ' + detectMedia(width));
 			}
+		});
+
+		$(window).on('keyup', function(e){
+			let n = false, iterate = '';
+			if (e.keyCode == 37) {
+				iterate = Object.entries(params.media).reverse();
+			} else if (e.keyCode == 39) {
+				iterate = Object.entries(params.media);
+			}
+			for (const [k, v] of iterate) {
+				if (n) {
+					m = k;
+					width = v;
+					break;
+				}
+				n = m === k;
+			}
+			width = width < min ? min : width;
+			$('#rwdFrame iframe').css('width', width + 'px');
+			$('#rwdFrame .size').val(width);
+			$('#rwdFrame .data').html('px | ' + detectMedia(width));
 		});
 
 		$('#rwdFrame button.switch').on('click', function(e){
