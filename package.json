@@ -1,6 +1,6 @@
 {
   "name": "rwdkit",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "jQuery plugin can help web developers to view the current breakpoint information in a responsive web page",
   "main": "jquery.rwdkit.js",
   "scripts": {
